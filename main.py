@@ -72,7 +72,7 @@ async def on_message(message):
 	if msg.startswith('.cur') and msg.endswith('inventory'):
 		await message.channel.send(check_currency(message))
 
-	if msg.startswith('.cur') and msg.endswith('steal @'):
-		await message.channel.send()
+	if msg.startswith('.cur') and msg.endswith('help'):
+		await message.channel.send('.cur gain: gain currency .cur meme: post a meme .cur fight monster: still working on this .cur shop: shows weapons .cur inventory: shows your currency')
 		
 client.run(os.getenv('TOKEN'))
